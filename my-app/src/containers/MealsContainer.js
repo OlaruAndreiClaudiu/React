@@ -1,20 +1,24 @@
 import React from "react";
 import { MealComponent, MealsComponent } from "../components/MealComponent";
 
+const mealContainer = {
+  display: "flex",
+  flexDirection: "column",
+  gap: "10px",
+};
+
 export const MealsContainer = (props) => {
     return (
-      <div>
-        <div>
-          {props.data
-            ? props.data.map((meal) => (
-                <MealComponent 
-                  key={meal.idMeal} 
-                  strMeal={meal.strMeal} 
-                  strMealThumb={meal.strMealThumb} 
-                />
-               ))
-              : "NO DATA AVAILABLE"}
-        </div>
-       </div>
-    );
-};
+      <div className="row row-cols-1 row-cols-nd-2 row-cols-lg-3">
+        {props.data
+        ? props.data.map((meal) => (
+        <MealComponent 
+        key={meal.idMeal} 
+        strMeal={meal.strMeal} 
+        strMealThumb={meal.strMealThumb} 
+        />
+      ))
+      : "NO DATA AVAILABLE"}
+      </div>
+      );
+    };

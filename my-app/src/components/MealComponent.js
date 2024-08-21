@@ -18,14 +18,14 @@ const mealCard = {
 export const MealComponent = ({ strMeal, strMealThumb }) => {
     return (
         <div className="col">
-            <div className="card flex-row">
+            <div className="card flex-row border border-white">
                 <img 
-                className="rounded-circle" 
+                className="rounded-circle border p-1 bg-danger" 
                 style={{width: "100px", height: "100px"}} 
                 src={strMealThumb}
                 ></img>
                 <div className="card-body">
-                    <h3 className="fs-6">{strMeal}</h3>
+                    <h3 className="fs-6 p-3 mb-2 rounded bg-danger text-white" style={{height: "auto"}}>{strMeal}</h3>
                     <p className="card-text">Some description goes here.</p>
                 </div>
             </div>

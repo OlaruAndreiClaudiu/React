@@ -15,13 +15,13 @@ const mealCard = {
     borderRadius: "10px",
 };
 
-export const MealComponent = ({strMeal, strMealThumb}) => {
+export const MealComponent = ({ strMeal, strMealThumb }) => {
     return (
         <div className="col">
             <div className="card flex-row">
                 <img 
-                className="rounded" 
-                style={{width: "50px", height: "50px"}} 
+                className="rounded-circle" 
+                style={{width: "100px", height: "100px"}} 
                 src={strMealThumb}
                 ></img>
                 <div className="card-body">

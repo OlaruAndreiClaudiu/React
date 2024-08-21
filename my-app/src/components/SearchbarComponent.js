@@ -3,10 +3,10 @@ import React from "react";
 export default function SearchbarComponent() {
     return (
         <div className="container-fluid d-flex gap-3 align-items-center p-2">
-            <div clasName="dropdown">
+            <div className="dropdown">
                 <a 
                 href="#"
-                className="d-flex align-items-center col-lg-4 mb-2 mb-lg-0"
+                className="d-flex align-items-center col-lg-4 mb-2 mb-lg-0 link-body-emphassis text-decoration-none dropdown-toggle"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
                 >
@@ -14,7 +14,7 @@ export default function SearchbarComponent() {
                 </a>
             </div>
 
-            <div className="d-flex ms-auto w-50 align-items-">
+            <div className="d-flex ms-auto w-50 align-items-center">
             <input 
             type="search"
             className="form-control"

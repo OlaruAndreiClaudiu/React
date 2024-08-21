@@ -6,7 +6,7 @@ export default function SearchbarComponent() {
             <div className="dropdown">
                 <a 
                 href="#"
-                className="d-flex align-items-center col-lg-4 mb-2 mb-lg-0 link-body-emphassis text-decoration-none dropdown-toggle"
+                className="d-flex align-items-center col-lg-4 mb-2 mb-lg-0 link-body-emphassis text-decoration-none dropdown-toggle text-danger"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
                 >

@@ -5,7 +5,7 @@ export default function SidebarContainer () {
     <div className="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary">
       <ul className="nav nav-pills flex-column mb-auto">
         <li className="nav-item">
-          <a href="#" className="nav-link active" aria-current="page">
+          <a href="#" className="nav-link active p-3 mb-2 bg-danger text-white" aria-current="page">
             Home
           </a>
         </li>
